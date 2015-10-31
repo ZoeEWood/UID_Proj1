@@ -1,0 +1,82 @@
+<!--- Zoe Wood * Spotify Search * HW1 * October 8, 2015 --->
+
+<html>
+
+<head>
+	
+	<!---necessary for bootstrap--->
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE_+edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<title>Part_2</title>
+	<link href="bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+<head>
+
+<body>
+
+	<div class="jumbotron">
+		<div class="container">
+	
+		<h1> Search Spotify! </h1>
+		<h2> You can use this tool to search Spotify's content by Song, Artist, Album, Genre, and Year. </h2>
+		<br><br>
+		<p> Just specify one or more of the following, and click "Search!" </p> 
+	
+			<form id="search-form">
+       			<div class="col-md-4">
+       		 		<input type="text" id="query" name="track" value="" class="form-control" placeholder="Track"/>
+       			</div>
+       			<div class="col-md-4">
+       				<input type="text" id="query" name="artist" value="" class="form-control" placeholder="Artist"/>
+       			</div>
+       			<div class="col-md-4">
+       				<input type="text" id="query" name="album" value="" class="form-control" placeholder="Album"/>
+       			</div>
+       		<br><br><br>
+       			<div class="col-md-4">
+       				<input type="text" id="query" name="genre" value="" class="form-control" placeholder="Genre"/>
+       			</div>
+       			<div class="col-md-4">
+       				<input type="text" id="query" name="year" value="" class="form-control" placeholder="Year"/>
+       			</div>
+
+       			<input type="submit" id="button-search" class="btn btn-primary" value="Search!"/>
+   			</form>
+   			
+    	</div>
+    </div>
+	
+	<div id="container">
+	<div id="content">
+	<div class="row">
+	
+		<div class="col-md-4" >
+			<div id="out1"> </div>
+		</div>
+		
+		<div class="col-md-4" >
+			<div id="out2"> </div>
+		</div> 
+		
+		<div class="col-md-4" >
+       		<br><br><br>
+       		<form>
+       		<input type="button" id="more" class="btn btn-primary" value="See More Results from This Search!"/>
+       	<br><br><br>
+       		<input type="button" id="refresh" class="btn btn-primary" onclick="history.go(0)" value="Start Over!"/>
+       		</form>
+		</div> 
+		</div>
+	</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
